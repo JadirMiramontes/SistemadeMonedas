@@ -1,0 +1,19 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class GameManage : MonoBehaviour
+{
+    //Volver publico la variable de puntos totales
+    public int PuntosTotales { get { return puntosTotales; }}
+    //variable a usar para el conteo de los puntos totales
+    private int puntosTotales;
+    
+    //metodo para sumar los puntos
+    public void SumarPuntos(int puntosASumar)
+    {
+        //puntosTotales = puntosTotales+puntosASumar
+        puntosTotales+=puntosASumar;
+        Debug.Log(puntosTotales);
+    }
+}
